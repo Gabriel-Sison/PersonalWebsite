@@ -1,0 +1,85 @@
+.background {
+    margin: 0; /* Remove default body margin */
+    background: WHITE;
+}
+
+.verticalContainer {
+    display: table-column;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    background-color: TAN; /* Change this to the desired color */
+}
+
+.horizontalContainer {
+    display: flex;
+    justify-content: space-between; /* Adjust this property based on your layout needs */
+    align-items: center; /* Center items vertically */
+    background-color: TAN; /* Background color for the container */
+    padding: 5px; /* Optional: Add padding to the container */
+}
+
+.menu {
+    display: flex;
+    justify-content: left; /* Adjust this property based on your layout needs */
+    align-items: center; /* Center items vertically */
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    white-space: nowrap; /* Prevent list items from wrapping to the next line */
+}
+
+.slidingFrame{
+    display: flex;
+    justify-content: left; /* Adjust this property based on your layout needs */
+    align-items: center; /* Center items vertically */
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    white-space: nowrap; /* Prevent list items from wrapping to the next line */
+    animation: scrollList 7s linear infinite;
+}
+
+@keyframes scrollList {
+    25% {
+        transform: translateX(25%);
+    }
+    75% {
+        transform: translateX(-25%);
+    }
+}
+
+.menuItems {
+    display: inline-block;
+    align-items: center; /* Center items vertically */
+    padding-right: 70px; /* Optional: Add padding to the container */
+    background: BLACK;
+    -webkit-background-clip: text;
+    font-family: "Papyrus", sans-serif;
+    font-size: 20pt;
+}
+
+
+.titleBackground {
+    background: BLACK;
+}
+
+.title {
+    background: WHITE;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Copperplate', sans-serif;
+    text-align: center;
+    align-items: center;
+    font-size: 64pt;
+}
+
+.text {
+    background: BLACK;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Papyrus", sans-serif;
+    text-align: left;
+    font-size: 27pt;
+}
+
