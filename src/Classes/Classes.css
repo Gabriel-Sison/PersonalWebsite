@@ -7,7 +7,7 @@
     background: BLACK;
     -webkit-background-clip: text;
     color: transparent;
-    font-family: "Papyrus", sans-serif;
+    font-family: "Palatino", sans-serif;
     text-align: start;
     font-size: 18pt;
     margin-right: 10px;
@@ -17,7 +17,7 @@
     background: BLACK;
     -webkit-background-clip: text;
     color: transparent;
-    font-family: "Papyrus", sans-serif;
+    font-family: "Palatino", sans-serif;
     text-align: start;
     font-size: 30pt;
     font-weight: 1000;
@@ -26,7 +26,7 @@
 
 
 .schoolTitle {
-    background: GOLD;
+    background: RED;
     -webkit-background-clip: text;
     color: transparent;
     font-family: 'Copperplate', sans-serif;

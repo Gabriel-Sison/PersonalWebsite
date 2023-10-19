@@ -23,3 +23,24 @@
 .projectLink:hover {
     font-size: 50px; /* Adjust the size as needed */
 }
+
+.sexy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6b6b, #5563de);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.sexy-button:hover {
+    background: linear-gradient(45deg, #5563de, #ff6b6b);
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
