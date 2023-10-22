@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../index.css">
-    <link rel="stylesheet" href="Projects.css">
+    <link rel="stylesheet" href="../Projects/Projects.css">
     <link rel="stylesheet" href="../Classes/Classes.css">
     <title>Projects</title>
 </head>
@@ -39,19 +39,23 @@
 <div class="schoolTitle">Resume Review</div>
     <div class="text">
         Feel free to send me your resume and I'll give feedback in a timely manner!
-        <ul>
-            <li>Name</li>
-            <li>Intended positions applying for</li>
-            <li>Nearest deadline you want feedback by</li>
-        </ul>
-        <form>
-            <label for="fname">Full Name:</label>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="goals">Resume Goals</label>
-            <input type="text" id="goals" name="goals"><br>
-            <label for="deadline">Nearest Deadline</label>
-            <input type="text" id="deadline" name="deadline"><br>
+
+        <form method="post">
+            <label> Name:<input type="text" size="100%" name="name"> </label><br>
+            <label> E-mail:<input type="text" size="100%" name="email"> </label><br>
+            <label>Goals:<input type="text" size="100%" name="goals"> </label><br>
+            <label>Nearest Deadline:<input type="text" size="100%" name="deadline"> </label><br>
+            <label>Resume PDF:<input name="file1" type="file" accept="application/pdf"> </label><br>
+            <input type="submit" class="sexy-button" onclick="myFunction()">
         </form>
+
+        <script>
+            function myFunction() {
+                window.alert("I don't have a web server yet to be able to use PHP :P \n" +
+                    "Please email me @gabrielarceo0183@gmail.com");
+            }
+        </script>
+
     </div>
 
 </body>
