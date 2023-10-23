@@ -7,7 +7,7 @@
     background: BLACK;
     -webkit-background-clip: text;
     color: transparent;
-    font-family: "Palatino", sans-serif;
+    font-family: EBGaramond-Regular, serif;
     text-align: start;
     font-size: 18pt;
     margin-right: 10px;
@@ -16,17 +16,17 @@
 .quarterText {
     background: BLACK;
     -webkit-background-clip: text;
-    color: transparent;
-    font-family: "Palatino", sans-serif;
+    color: transparent;;
+    font-family: EBGaramond-Regular, serif;
     text-align: start;
     font-size: 30pt;
     font-weight: 1000;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
 .schoolTitle {
-    background: RED;
+    background: BLACK;
     -webkit-background-clip: text;
     color: transparent;
     font-family: 'Copperplate', sans-serif;

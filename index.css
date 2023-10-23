@@ -3,25 +3,24 @@
 }
 
 .verticalContainer {
-    display: table-column;
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
-    align-items: start;
-    border-radius: 20px;
 }
 
 .horizontalContainer {
     display: flex;
-    justify-content: space-between; /* Adjust this property based on your layout needs */
-    align-items: center; /* Center items vertically */
-    padding: 5px; /* Optional: Add padding to the container */
-    border-radius: 20px;
+    flex-direction: row;
+    justify-content: space-evenly; /* Adjust this property based on your layout needs */
+    align-items: flex-start; /* Center items vertically */
+    flex-wrap: nowrap;
 }
 
 .menu {
     display: flex;
     justify-content: left; /* Adjust this property based on your layout needs */
-    align-items: center; /* Center items vertically */
     overflow: hidden;
     list-style-type: none;
     padding: 0;
@@ -51,23 +50,18 @@
 .menuItems {
     display: inline-block;
     align-items: center; /* Center items vertically */
-    padding-right: 70px; /* Optional: Add padding to the container */
+    padding-right: 35px;
+    padding-left: 35px;
     background: BLACK;
     -webkit-background-clip: text;
     font-family: "Palatino", sans-serif;
     font-size: 20pt;
 }
 
-
-.titleBackground {
-    background: BLACK;
-    border-radius: 20px;
-}
-
 .title {
-    font-size: 3em;
+    font-size: 40px;
     font-weight: bold;
-    color: #3498db;
+    color: BLACK;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -75,17 +69,12 @@
     transition: color 0.3s ease-in-out;
 }
 
-.title:hover {
-    color: #e74c3c;
-}
-
 .text {
     background: BLACK;
     -webkit-background-clip: text;
-    color: transparent;
-    font-family: "Palatino", sans-serif;
+    font-family: EBGaramond-Regular, serif;
     text-align: left;
-    font-size: 27pt;
+    font-size: 25pt;
 }
 
 .modern-link {
@@ -93,6 +82,7 @@
     color: PURPLE;
     position: relative;
     font-weight: bold;
+    font-size: 30px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -116,4 +106,25 @@
 .modern-link:hover::before {
     visibility: visible;
     transform: scaleX(1);
+}
+
+.sexy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6b6b, #5563de);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.sexy-button:hover {
+    background: linear-gradient(45deg, #5563de, #ff6b6b);
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
